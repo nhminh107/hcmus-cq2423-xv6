@@ -194,6 +194,10 @@ UPROGS=\
 	$U/_grind\
 	$U/_wc\
 	$U/_zombie\
+	$U/_cp\
+	$U/_diff\
+
+
 	$U/_tree\
 	$U/_du\
 	$U/_sleep\
@@ -378,3 +382,5 @@ zipball: clean submit-check
 	git archive --verbose --format zip --output lab.zip HEAD
 
 .PHONY: zipball clean grade submit-check
+CFLAGS += -march=rv64gc -mabi=lp64d
+ASFLAGS += -march=rv64gc -mabi=lp64d
