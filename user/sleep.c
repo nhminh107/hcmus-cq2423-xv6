@@ -3,11 +3,12 @@
 
 int main(int argc,char* argv[]){
     if(argc < 2){                                                                       
-        fprintf(2, "No ticket yet");
+        fprintf(2, "No ticks yet");
         exit(1);
     }
-    int ticket = atoi(argv[1]);                         
-    sleep(ticket);
+    int ticks = atoi(argv[1]);      
+    printf("Sleeping for %d ticks...\n", ticks);                   
+    sleep(ticks);
     printf("Woke up!\n");
     exit(0);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 }                                                            
